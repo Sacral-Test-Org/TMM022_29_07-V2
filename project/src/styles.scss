@@ -1,0 +1,63 @@
+/* Global Styles for the Angular Application */
+
+/* Ensure the main window is maximized upon opening the application */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Style the PART_MASTER window to be displayed in its normal state within the main window */
+.part-master-window {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+/* Style the title of the main window to be set to "T K A P - [IS]" */
+.main-window-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Style the current form name to be displayed prominently on the screen */
+.form-name {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Style the current date to be set in the HDR section */
+.hdr-date {
+  font-size: 16px;
+  text-align: right;
+  margin-right: 20px;
+}
+
+/* Style the SAVE button to be disabled and visually indicate its disabled state */
+button.save-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Style the fields GROUP_ID, PARTNO, PART_STATUS, PART_DESC, and LINE_ID to be enabled and visually indicate their enabled state */
+input:enabled {
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+/* Style the UNIT_ID field to be enabled if it is initially disabled and visually indicate its enabled state */
+input#UNIT_ID:enabled {
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+/* Ensure the cursor is styled to move to the UNIT_ID field */
+input#UNIT_ID:focus {
+  outline: 2px solid #007bff;
+}

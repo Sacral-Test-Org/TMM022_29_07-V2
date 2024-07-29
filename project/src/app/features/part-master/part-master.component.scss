@@ -1,0 +1,69 @@
+/* Purpose: Defines the styles for the PART_MASTER window */
+
+/* Ensure the main window is maximized upon opening the application */
+:host {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Style the PART_MASTER window to be displayed in its normal state within the main window */
+.part-master-window {
+  display: block;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+/* Style the title of the main window to be set to "T K A P - [IS]" */
+.main-window-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Style the current form name to be displayed prominently on the screen */
+.current-form-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Style the current date to be set in the HDR section */
+.hdr-section {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Style the SAVE button to be disabled and visually indicate its disabled state */
+.save-button {
+  background-color: #ccc;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: not-allowed;
+}
+
+/* Style the fields GROUP_ID, PARTNO, PART_STATUS, PART_DESC, and LINE_ID to be enabled and visually indicate their enabled state */
+.field-enabled {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Style the UNIT_ID field to be enabled if it is initially disabled and visually indicate its enabled state */
+.unit-id-field {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Ensure the cursor is styled to move to the UNIT_ID field */
+.unit-id-field:focus {
+  outline: 2px solid #007bff;
+}

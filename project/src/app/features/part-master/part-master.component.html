@@ -1,0 +1,36 @@
+<div class="main-window" style="width: 100vw; height: 100vh;">
+  <div class="part-master-window">
+    <h1>{{ title }}</h1>
+    <div class="hdr-section">
+      <span>Form: {{ currentFormName }}</span>
+      <span>Date: {{ currentDate }}</span>
+    </div>
+    <form>
+      <div>
+        <label for="groupId">Group ID:</label>
+        <input id="groupId" type="text" [(ngModel)]="groupIdField" [disabled]="!groupIdFieldEnabled" />
+      </div>
+      <div>
+        <label for="partNo">Part No:</label>
+        <input id="partNo" type="text" [(ngModel)]="partNoField" [disabled]="!partNoFieldEnabled" />
+      </div>
+      <div>
+        <label for="partStatus">Part Status:</label>
+        <input id="partStatus" type="text" [(ngModel)]="partStatusField" [disabled]="!partStatusFieldEnabled" />
+      </div>
+      <div>
+        <label for="partDesc">Part Description:</label>
+        <input id="partDesc" type="text" [(ngModel)]="partDescField" [disabled]="!partDescFieldEnabled" />
+      </div>
+      <div>
+        <label for="lineId">Line ID:</label>
+        <input id="lineId" type="text" [(ngModel)]="lineIdField" [disabled]="!lineIdFieldEnabled" />
+      </div>
+      <div>
+        <label for="unitId">Unit ID:</label>
+        <input id="unitId" type="text" [(ngModel)]="unitIdField" [disabled]="!unitIdFieldEnabled" />
+      </div>
+      <button id="saveButton" [disabled]="true">Save</button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T K A P - [IS]</title>
+</head>
+<body>
+  <app-root>
+    <div id="mainWindow" style="width: 100vw; height: 100vh;">
+      <div id="partMasterWindow" style="display: block;">
+        <h1>{{ title }}</h1>
+        <div id="HDR">
+          <span>{{ currentFormName }}</span>
+          <span>{{ currentDate }}</span>
+        </div>
+        <form>
+          <label for="GROUP_ID">Group ID:</label>
+          <input type="text" id="GROUP_ID" name="GROUP_ID" [(ngModel)]="groupIdField" />
+
+          <label for="PARTNO">Part No:</label>
+          <input type="text" id="PARTNO" name="PARTNO" [(ngModel)]="partNoField" />
+
+          <label for="PART_STATUS">Part Status:</label>
+          <input type="text" id="PART_STATUS" name="PART_STATUS" [(ngModel)]="partStatusField" />
+
+          <label for="PART_DESC">Part Description:</label>
+          <input type="text" id="PART_DESC" name="PART_DESC" [(ngModel)]="partDescField" />
+
+          <label for="LINE_ID">Line ID:</label>
+          <input type="text" id="LINE_ID" name="LINE_ID" [(ngModel)]="lineIdField" />
+
+          <label for="UNIT_ID">Unit ID:</label>
+          <input type="text" id="UNIT_ID" name="UNIT_ID" [(ngModel)]="unitIdField" />
+
+          <button id="saveButton" [disabled]="true">Save</button>
+        </form>
+      </div>
+    </div>
+  </app-root>
+</body>
+</html>
